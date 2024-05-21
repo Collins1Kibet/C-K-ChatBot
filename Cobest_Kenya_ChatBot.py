@@ -6,7 +6,7 @@ import google.generativeai as gen_ai
 
 pwd = os.getcwd()
 
-load_dotenv()
+load_dotenv(pwd + '\\.env')
 
 st.set_page_config(
     page_title='Chat with Gemini-Pro!',
