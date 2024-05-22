@@ -4,10 +4,7 @@ import streamlit as st
 from dotenv import load_dotenv
 import google.generativeai as gen_ai
 
-#working_dir = os.path.dirname(os.path.abspath(__file__))
-#model_path = f"{working_dir}/.env"
 
-#load_dotenv(model_path)
 
 if os.path.exists('.env'):
     load_dotenv('.env')
@@ -17,9 +14,8 @@ def get_env_var(key, default_value=None):
         return st.secrets[key]
     return os.getenv(key, default_value)
 
-#load_dotenv()
 
-#google_api_key = os.getenv('GOOGLE_API_KEY')
+
 
 st.set_page_config(
     page_title='Chat with Gemini-Pro!',
@@ -27,9 +23,11 @@ st.set_page_config(
     layout='centered', 
 )
 
+
+
 GOOGLE_API_KEY = get_env_var("GOOGLE_API_KEY")
 
-#GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+
 
 gen_ai.configure(api_key=GOOGLE_API_KEY)
 model = gen_ai.GenerativeModel('gemini-pro')
