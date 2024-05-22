@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import google.generativeai as gen_ai
 
 working_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = f"{working_dir}/.env"
+model_path = f"{working_dir}"
 
 load_dotenv(model_path)
 
