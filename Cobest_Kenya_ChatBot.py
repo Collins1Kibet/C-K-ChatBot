@@ -4,10 +4,9 @@ import streamlit as st
 from dotenv import load_dotenv
 import google.generativeai as gen_ai
 
-working_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = f"{working_dir}"
+pwd = os.getcwd()
 
-load_dotenv(model_path)
+load_dotenv(pwd + "\\.env")
 
 st.set_page_config(
     page_title='Chat with Gemini-Pro!',
