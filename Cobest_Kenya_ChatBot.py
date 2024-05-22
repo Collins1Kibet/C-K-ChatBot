@@ -4,10 +4,10 @@ import streamlit as st
 from dotenv import load_dotenv
 import google.generativeai as gen_ai
 
-working_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = f"{working_dir}/.env"
+#working_dir = os.path.dirname(os.path.abspath(__file__))
+#model_path = f"{working_dir}/.env"
 
-load_dotenv(model_path)
+#load_dotenv(model_path)
 
 if os.path.exits('.env'):
     load_dotenv('.env')
