@@ -9,7 +9,7 @@ import google.generativeai as gen_ai
 
 #load_dotenv(model_path)
 
-if os.path.exits('.env'):
+if os.path.exists('.env'):
     load_dotenv('.env')
 
 def get_env_var(key, default_value=None):
