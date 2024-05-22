@@ -6,7 +6,7 @@ import google.generativeai as gen_ai
 
 pwd = os.getcwd()
 
-load_dotenv(pwd + "\\.gitignore")
+load_dotenv(pwd + "\\.gitignore\.env")
 
 st.set_page_config(
     page_title='Chat with Gemini-Pro!',
