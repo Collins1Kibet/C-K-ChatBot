@@ -9,13 +9,17 @@ import google.generativeai as gen_ai
 
 #load_dotenv(model_path)
 
-if os.path.exists('.env'):
-    load_dotenv('.env')
+#if os.path.exists('.env'):
+    #load_dotenv('.env')
 
-def get_env_var(key, default_value=None):
-    if key in st.secrets:
-        return st.secrets[key]
-    return os.getenv(key, default_value)
+#def get_env_var(key, default_value=None):
+  #  if key in st.secrets:
+      #  return st.secrets[key]
+  #  return os.getenv(key, default_value)
+
+load_dotenv()
+
+google_api_key = os.getenv('GOOGLE_API_KEY')
 
 st.set_page_config(
     page_title='Chat with Gemini-Pro!',
