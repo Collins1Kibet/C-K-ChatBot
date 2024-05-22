@@ -14,7 +14,7 @@ if os.path.exists('.env'):
 
 def get_env_var(key, default_value=None):
     if key in st.secrets:
-        return st,secrets[key]
+        return st.secrets[key]
     return os.getenv(key, default_value)
 
 st.set_page_config(
