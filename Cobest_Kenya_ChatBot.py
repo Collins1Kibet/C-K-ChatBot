@@ -19,7 +19,7 @@ import google.generativeai as gen_ai
 
 load_dotenv()
 
-google_api_key = os.getenv('GOOGLE_API_KEY')
+#google_api_key = os.getenv('GOOGLE_API_KEY')
 
 st.set_page_config(
     page_title='Chat with Gemini-Pro!',
