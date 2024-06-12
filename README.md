@@ -14,7 +14,7 @@ This repository contains the code for a chatbot built using Google Gemini Pro an
 - Google API key for Google Gemini Pro
 
 #### Link to my Webapp
-[https://cobestkenyachatbot.streamlit.app/](https://c-k-chatbot.streamlit.app/)
+https://c-k-chatbot.streamlit.app/
 
 #### Usage
 *ChatBot*
